@@ -1,0 +1,164 @@
+/** @format */
+
+#What {
+	background: #f2f3f5;
+	padding: 3rem 3rem;
+	.title {
+		font-size: 1.8rem;
+		font-weight: 600;
+		padding-bottom: 2rem;
+	}
+	.content {
+		.list {
+			margin-right: 1rem;
+			background-color: white;
+			padding: 40px 30px;
+			.top {
+				display: flex;
+				padding-bottom: 1rem;
+				img {
+					width: 70px;
+					height: 70px;
+					border-radius: 50%;
+				}
+				div {
+					font-size: 1rem;
+					font-weight: 600;
+					line-height: 4rem;
+					padding-left: 12px;
+				}
+			}
+			.bot {
+				font-size: 1rem;
+				padding-bottom: 2rem;
+			}
+		}
+	}
+}
+@media only screen and(min-width : 360px) {
+	#What .content .list .top div {
+		font-size: 1rem;
+		font-weight: 600;
+		line-height: 2rem;
+		padding-left: 12px;
+	}
+	.trademark {
+		.left {
+			line-height: 3rem;
+			padding: 0 12%;
+			text-align: center;
+			width: 100%;
+			h5 {
+				font-weight: 600;
+			}
+			p {
+				font-size: 14px;
+				line-height: 22px;
+				margin-bottom: 1rem !important;
+			}
+			a {
+				font-size: 16px;
+				text-decoration: none;
+				color: white;
+				border: 1px solid;
+				padding: 13px 22px;
+				background: #ec5252;
+				transition: 0.2s all;
+				&:hover {
+					background: #960f0f;
+				}
+			}
+		}
+		.right {
+			line-height: 3rem;
+			padding: 0 12%;
+			text-align: center;
+			width: 100%;
+			h5 {
+				font-weight: 600;
+			}
+			p {
+				font-size: 14px;
+				line-height: 22px;
+				margin-bottom: 1rem !important;
+			}
+			a {
+				font-size: 12px;
+				text-decoration: none;
+				color: white;
+				border: 1px solid;
+				padding: 13px 22px;
+				background: #ec5252;
+				transition: 0.2s all;
+				&:hover {
+					background: #960f0f;
+				}
+			}
+		}
+	}
+}
+@media only screen and(min-width : 768px) {
+	#What .content .list .top div {
+		font-size: 1rem;
+		font-weight: 600;
+		line-height: 2rem;
+		padding-left: 12px;
+	}
+	.trademark {
+		display: flex;
+
+		.left {
+			line-height: 3rem;
+			padding: 0 12%;
+			text-align: center;
+			width: 50%;
+			h5 {
+				font-weight: 600;
+			}
+			p {
+				font-size: 14px;
+				line-height: 22px;
+				margin-bottom: 1rem !important;
+			}
+			a {
+				font-size: 16px;
+				text-decoration: none;
+				color: white;
+				border: 1px solid;
+				padding: 15px 15px;
+				background: #ec5252;
+				transition: 0.2s all;
+				&:hover {
+					background: #960f0f;
+				}
+			}
+		}
+		.right {
+			border-left: 1px solid rgba(51, 51, 51, 0.199);
+			line-height: 3rem;
+			padding: 0 12%;
+			text-align: center;
+			width: 50%;
+			h5 {
+				font-weight: 600;
+			}
+			p {
+				font-size: 14px;
+				line-height: 22px;
+				margin-bottom: 1rem !important;
+			}
+			a {
+				font-size: 13px;
+				text-decoration: none;
+				color: white;
+				border: 1px solid;
+				padding: 15px 15px;
+				background: #ec5252;
+				transition: 0.2s all;
+				&:hover {
+					background: #960f0f;
+				}
+			}
+		}
+	}
+}

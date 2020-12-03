@@ -1,0 +1,44 @@
+/** @format */
+
+.mid__banner {
+	background-color: #29303b;
+	color: white;
+	.line__gradient {
+		height: 10px;
+		background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+	}
+	.row {
+		margin-right: 0px !important;
+	}
+	.mid__banner__effect {
+		padding: 50px 0;
+		font-size: 2rem;
+		align-items: center;
+	}
+	.mid__banner__effect-1 {
+		align-items: center;
+		i {
+			font-size: 2rem;
+			padding-left: 30%;
+		}
+		h4 {
+			font-weight: bold;
+		}
+		button {
+			padding: 10px;
+			border: none;
+			a {
+				color: white;
+				font-weight: bold;
+				text-decoration: none;
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.mid__banner {
+		i {
+			display: none;
+		}
+	}
+}

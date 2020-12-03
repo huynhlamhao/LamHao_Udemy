@@ -1,0 +1,34 @@
+@mixin search {
+   input {
+      border: transparent;
+      &:focus {
+         box-shadow: none;
+      }
+      &::placeholder {
+         color: red;
+      }
+   }
+   i {
+      padding: 12px;
+      background-color: $color;
+      color: red;
+      cursor: pointer;
+      &:hover {
+         background-color: red;
+         color: $color;
+      }
+   }
+}
+@mixin slickNextPrev {
+   .slick-prev {
+      left: -20px !important;
+   }
+   .slick-next {
+      right: 0 !important;
+   }
+   .slick-next:before,
+   .slick-prev:before {
+      font-size: 2rem;
+      color: #00576b;
+   }
+}

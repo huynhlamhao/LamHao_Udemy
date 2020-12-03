@@ -1,0 +1,20 @@
+#udemy__works {
+   background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+   padding: 20px 0 10px 0;
+   text-align: left;
+   color: white;
+
+   .works_effect {
+      i {
+         float: left;
+         display: block;
+         font-size: 3rem;
+         margin: 0 10px;
+      }
+   }
+}
+@media screen and (max-width: 992px) {
+   #udemy__works {
+      display: none;
+   }
+}

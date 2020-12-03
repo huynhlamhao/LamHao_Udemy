@@ -1,0 +1,134 @@
+.course__left {
+   background: #f7f8fa;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 30px;
+   .courses__selection_description {
+      h5 {
+         font-weight: bold;
+         font-size: 1.1rem;
+      }
+   }
+}
+.items__contents {
+   text-overflow: ellipsis;
+   border: 1px solid #80808063;
+   margin: 5px;
+
+   box-shadow: 0px 2px 0px 0px #8080802b;
+   transition: all 0.5s;
+   cursor: pointer;
+   .img__items {
+      position: relative;
+      img {
+         width: 100%;
+      }
+      .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         background-color: rgba(82, 80, 80, 0.671);
+         width: 100%;
+         height: 100%;
+         opacity: 0;
+         transition: ease 0.8s;
+      }
+   }
+   .text__items {
+      padding: 5px;
+
+      h6 {
+         text-overflow: ellipsis;
+         overflow: hidden;
+         white-space: nowrap;
+         padding-top: 20px;
+      }
+      .rating__items {
+         font-size: 0.8rem;
+         i {
+            color: #f4c150;
+         }
+      }
+      .price__items {
+         text-align: right;
+         padding: 10px 0;
+         font-size: 1rem;
+      }
+   }
+   &:hover {
+      box-shadow: 0px 5px 5px 5px #8080802b;
+      .overlay {
+         opacity: 1;
+      }
+   }
+}
+@include slickNextPrev();
+.nav {
+   border-bottom: 1px solid #dedfe0;
+
+   .nav-item {
+      font-size: 1rem;
+      white-space: normal;
+      .nav-link {
+         padding: 0.5rem 0.8rem;
+         color: #73726c;
+         background-color: white;
+         border-radius: 0;
+      }
+      .active {
+         background-color: white;
+         color: #3c3b37;
+         border-bottom: 5px solid #007791;
+      }
+   }
+}
+.slick-dots {
+   display: none !important;
+}
+// responesive
+@media screen and (max-width: 1200px) {
+   .nav {
+      .nav-item {
+         font-size: 1rem;
+         .nav-link {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            line-height: 17.5px;
+            height: 50px;
+            width: 95px;
+         }
+      }
+   }
+}
+@media screen and (max-width: 992px) {
+   .course__left {
+      display: none;
+   }
+   .nav {
+      .nav-item {
+         font-size: 0.8rem;
+         .nav-link {
+            padding: 0.5rem 0.5rem;
+            color: #14171c;
+            background-color: white;
+            white-space: normal;
+         }
+         .active {
+            background-color: white;
+            color: #14171c;
+         }
+      }
+   }
+}
+@media screen and (max-width: 768px) {
+   .nav {
+      .nav-item {
+         font-size: 0.8rem;
+         .nav-link {
+            width: 70px;
+         }
+      }
+   }
+}

@@ -1,0 +1,25 @@
+/** @format */
+
+footer {
+	padding: 20px 5%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 10px;
+	li {
+		list-style: none;
+		line-height: 1.5rem;
+		a {
+			text-decoration: none !important;
+			color: black;
+			font-size: 13px;
+		}
+	}
+	div {
+		border-top: 1px solid black;
+		img {
+			height: 80px !important;
+			width: 100px !important;
+			margin-right: 2rem;
+		}
+	}
+}
